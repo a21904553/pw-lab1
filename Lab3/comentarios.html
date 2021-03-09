@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Ricardo Faia">
-    <meta name="keywords" content="Localização, Multimédia">
+    <meta name="keywords" content="Holanda, Amesterdão">
     <meta name="description" content="Website sobre Amesterdão">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
     <title>Cidade do Mundo</title>
@@ -18,9 +18,83 @@
     <a href="local.html">Localização</a>
     <a href="multimedia.html">Multimédia</a>
     <a href="info.html">Informação</a>
+    <a href="quizz.html">Quizz</a>
+    <a href="comentarios.html">Comentários</a>
 
     <h3>Comentários</h3>
 
-    
+    <img src="images/montijo.jpg" alt="Praça da Republica, Montijo"><br>
+        <div style="text-align: center">
+            <a href="quizz.html">Quizz</a>
+            |
+            <a href="comentarios.html"><b>Comentários</b></a>
+            |
+            <a href="../index.html">Home</a>
+            |
+            <a href="index.html">Introdução</a>
+            |
+            <a href="local.html">Localização</a>
+            |
+            <a href="multimedia.html">Multimédia</a>
+            |
+            <a href="info.html">Informações</a>
+        </div>
+        <h3>Comentários:</h3>
+        <form
+            oninput="outR.value=parseInt(rig.value)"
+            method="POST" action="mailto:a21904825@alunos.ulht.pt">
+            <fieldset>
+                <legend align="center">Dê a sua opinião do Website</legend>
+                <input type="reset" value="Limpar">
+                <p>&#x2139; Escolha para cada critério um valor de 1 a 5 sendo 1 Péssimo e 5 Muito Bom.</p>
+                <p>Clareza:
+                    <input type="radio" id="clar1" name="clar" value="1">
+                    <label for="clar1">1</label>
+                    <input type="radio" id="clar2" name="clar" value="2">
+                    <label for="clar2">2</label>
+                    <input type="radio" id="clar3" name="clar" value="3">
+                    <label for="clar3">3</label>
+                    <input type="radio" id="clar4" name="clar" value="4">
+                    <label for="clar4">4</label>
+                    <input type="radio" id="clar5" name="clar" value="5">
+                    <label for="clar5">5</label>
+                </p>
+                <p>Rigor:
+                    <input type="range" id="rig" name="rig" min="1" max="5">
+                    <output name="outR">3</output>
+                </p>
+                <p>Precisão:
+                    <input type="number" id="pre" name="pre" min="1" max="5">
+                </p>
+                <p>Originalidade:
+                    <input type="number" id="origi" name="origi" min="1" max="5">
+                </p>
+                <p>&#x2139; Escolha as opções que acha que este Website teve em conta:</p>
+                <u>
+                    <li>
+                        <label for="prof">Profundidade</label>
+                        <input type="checkbox" id="prof" name="prof" value="Profundidade">
+                    </li>
+                    <li>
+                        <label for="amp">Amplitude</label>
+                        <input type="checkbox" id="amp" name="amp" value="Amplitude">
+                    </li>
+                    <li>
+                        <label for="log">Lógica</label>
+                        <input type="checkbox" id="log" name="log" value="Lógica">
+                    </li>
+                    <li>
+                        <label for="sign">Significância</label>
+                        <input type="checkbox" id="sign" name="sign" value="Significância">
+                    </li>
+                </u>
+                <br>
+                <textarea name="mensagem" rows="7" cols="50">Escreva aqui sugestões de melhoria.</textarea>
+                <input type="hidden" id="idLAB" name="idLAB" value="3">
+                <br>
+                <input type="submit" value="Enviar Comentários" style="height:25px; width:130px;" onclick="alert('Obrigado pela sua opinião')">
+            </fieldset>
+
+        </form>
     
 </body>

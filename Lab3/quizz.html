@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Ricardo Faia">
-    <meta name="keywords" content="Localização, Multimédia">
+    <meta name="keywords" content="Holanda, Amesterdão">
     <meta name="description" content="Website sobre Amesterdão">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
     <title>Cidade do Mundo</title>
@@ -18,9 +18,66 @@
     <a href="local.html">Localização</a>
     <a href="multimedia.html">Multimédia</a>
     <a href="info.html">Informação</a>
+    <a href="quizz.html">Quizz</a>
+    <a href="comentarios.html">Comentários</a>
 
     <h3>Quizz</h3>
 
-    
+    <form
+        oninput="x.value=parseInt(densidade.value)"
+        method="POST" action="mailto:a21904825@alunos.ulht.pt">
+
+            <fieldset>
+                <legend align="center">Informações Utilizador</legend>
+                <input type="reset" value="Limpar">
+                <p>Nome: <input type="text" id="fname" name="fname" autofocus required autocomplete="on"></p>
+                <p>Apelido: <input type="text" id="lname" name="lname" required autocomplete="on"></p>
+                <p>Email: <input type="email" id="email" name="email" required autocomplete="on"></p>
+                <p>Telemóvel: <input type="tel" id="phone" name="phone" placeholder="Ex: 9XXXXXXXX" maxlength="9" autocomplete="on"></p>
+            </fieldset>
+            <fieldset>
+                <legend align="center">Quizz</legend>
+                <p>A cidade de Amesterdão localiza-se em que região? <input type="text" id="regiao" name="regiao" size="15"></p>
+                <p>Em que ano a cidade declarou a independência do império clonial Espanhol? 
+                    <input type="radio" id="ano1" name="anoCidade" value="1578">
+                    <label for="ano1">1578</label>
+                    <input type="radio" id="ano2" name="anoCidade" value="1594">
+                    <label for="ano2">1594</label>
+                </p>
+                <p>Qual é a flor tipica de Amesterdão?
+                    <br>
+                    <input type="checkbox" id="flor1" name="flor1" value="Tulipas">
+                    <label for="flor1">Tulipas</label>
+                    <input type="checkbox" id="flor2" name="flor2" value="Rosas">
+                    <label for="flor2">Rosas</label>
+                    <input type="checkbox" id="flor3" name="flor3" value="Papoilas">
+                    <label for="flor3">Papoilas</label>
+                    <input type="checkbox" id="flor4" name="flor4" value="Cravos">
+                    <label for="flor4">Cravos</label>
+                    <input type="checkbox" id="flor5" name="flor5" value="Delfínio">
+                    <label for="flor5">Delfínio</label>
+                </p>
+                <p>
+                    <label for="dataNome">Em que data foi inaugurado o museu de Van Gogh (um dos principais museus de Amesterdão)?</label>
+                    <input type="date" id="dataNome" name="dataNome" min="1970-01-01" max="2000-12-31">
+                </p>
+                <p>
+                    <label for="cor">Escolha uma das cores da bandeira dos Países Baixos?</label>
+                    <input type="color" id="cor" name="cor" value="#FFFF00">
+                </p>
+                <p>
+                    <label for="freguesias">Qual é a área urbana de Amesterdão?</label>
+                    <input type="number" id="freguesias" name="freguesias" min="950" max="1050" step="2">
+                </p>
+                <p>
+                    <label for="ano">Qual densidade populacional?</label>
+                    <input type="range" id="densidade" name="densidade" min="1000" max="1700" value="1000">
+                    <output name="x">1000</output>
+                </p>
+            </fieldset>
+            <br>
+            <input type="submit" value="Enviar" style="height:25px; width:125px;">
+            
+        </form>
     
 </body>
