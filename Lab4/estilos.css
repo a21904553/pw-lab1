@@ -22,7 +22,7 @@ nav > a:link {
 }
 
 nav > a:visited {
-    color: red;
+    color: rgb(221, 188, 0);
 }
 
 nav > a:hover {
@@ -30,7 +30,7 @@ nav > a:hover {
 }
 
 nav > a:active {
-    color: orange;
+    color: red;
 }
 
 body table {
