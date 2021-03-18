@@ -3,7 +3,7 @@
 h1 {text-align: center;}
 
 body {
-    background-color: rgb(148, 146, 146);
+    background-color: rgb(122, 118, 118);
 }
 
 .centerImg {
@@ -16,7 +16,6 @@ body {
     display: block;
 }
 
-/*VER OUTRA FORMA DE FAZER ISTO*/
 nav > a:link {
     color: black;
 }
@@ -57,7 +56,7 @@ h4 + p::first-letter {
 }
 
 [class|="smallF"] {
-    border: 5px solid rgb(88, 0, 0);
+    border: 5px solid rgba(100, 82, 82, 0.712);
 }
 
 [class*="bigF"] {
@@ -97,6 +96,5 @@ h4 + p::first-letter {
     position: -webkit-sticky;
     position: sticky;
     top: 5%;
-    /*ADICIONEI ESTE HEIGH PARA NÃƒO APARECER UM ESPAÃ‡O EM BRANCO*/
     height: 0px;
 }
