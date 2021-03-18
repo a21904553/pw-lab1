@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt"></html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=wVZofZsG4jiaMdq3kaP0Unaqo2kH7s_0xcPcQulVSlBuIIBuaw9Jk2DOJDBQNa2oIy476k9jnj983Bo-59X7735_6vwftcZtlV_62VaVyUWmQbcCBpKv8LfIviZzzsep" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://ff.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9wdy1sYWJzLXBlZHJvY29zdGEtMjE5MDQ4MjUuaGVyb2t1YXBwLmNvbS9sYWI0L2h0bWw1LWNzcy5odG1s"/><style>
+        table, th, td {
+            border: 1px dashed  red;
+        } 
+    </style>
+    <meta name="author" content="Ricardo Faia">
+    <meta name="keywords" content="Holanda, Amesterdão">
+    <meta name="description" content="Website sobre Amesterdão">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+    <title>Cidade do Mundo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Amesterdão</h1>
+        <figure>
+            <img src="images/Amesterdão.png" alt="Amesterdão, Paises Baixos">
+            <details>Foto de uma ponte tipica de Amesterdão</details>
+        </figure>
+    </header>
+    <br>
+    <nav>
+        <a href="https://pw-lab1-21904553.herokuapp.com/"><span class="material-icons md-24">Home</span>Introdução</a>
+        <a href="local.html"><span class="material-icons md-24">fmd_good</span>Localização</a>
+        <a href="multimedia.html"><span class="material-icons md-24">image</span>Multimédia</a>
+        <a href="info.html"><span class="material-icons md-24">info</span>Informação</a>
+        <a href="quizz.html"><span class="material-icons md-24">quizz</span>Quizz</a>
+        <a href="comentarios.html"><span class="material-icons md-24">feedback</span>Comentários</a>
+    </nav> 
+    <main>
+
+        <h3>Comentários:</h3>
+        <form 
+            oninput="outR.value=parseInt(rig.value)"
+            method="POST" action="mailto:a21904553@alunos.ulht.pt">
+            <fieldset>
+                <legend align="center">Dê a sua opinião do Website</legend>
+                <input type="reset" value="Limpar">
+                <p>&#x2139; Escolha para cada critério um valor de 1 a 5 sendo 1 Péssimo e 5 Muito Bom.</p>
+                <p>Clareza:
+                    <input type="radio" id="clar1" name="clar" value="1">
+                    <label for="clar1">1</label>
+                    <input type="radio" id="clar2" name="clar" value="2">
+                    <label for="clar2">2</label>
+                    <input type="radio" id="clar3" name="clar" value="3">
+                    <label for="clar3">3</label>
+                    <input type="radio" id="clar4" name="clar" value="4">
+                    <label for="clar4">4</label>
+                    <input type="radio" id="clar5" name="clar" value="5">
+                    <label for="clar5">5</label>
+                </p>
+                <p>Rigor:
+                    <input type="range" id="rig" name="rig" min="1" max="5">
+                    <output name="outR">3</output>
+                </p>
+                <p>Precisão:
+                    <input type="number" id="pre" name="pre" min="1" max="5">
+                </p>
+                <p>Originalidade:
+                    <input type="number" id="origi" name="origi" min="1" max="5">
+                </p>
+                <p>&#x2139; Escolha as opções que acha que este Website teve em conta:</p>
+                <u>
+                    <li>
+                        <label for="prof">Profundidade</label>
+                        <input type="checkbox" id="prof" name="prof" value="Profundidade">
+                    </li>
+                    <li>
+                        <label for="amp">Amplitude</label>
+                        <input type="checkbox" id="amp" name="amp" value="Amplitude">
+                    </li>
+                    <li>
+                        <label for="log">Lógica</label>
+                        <input type="checkbox" id="log" name="log" value="Lógica">
+                    </li>
+                    <li>
+                        <label for="sign">Significância</label>
+                        <input type="checkbox" id="sign" name="sign" value="Significância">
+                    </li>
+                </u>
+                <br>
+                <textarea name="mensagem" rows="7" cols="50">Escreva aqui sugestões de melhoria.</textarea>
+                <input type="hidden" id="idLAB" name="idLAB" value="3">
+                <br>
+                <input type="submit" value="Enviar Comentários" style="height:25px; width:130px;" onclick="alert('Obrigado pela sua opinião')">
+            </fieldset>
+
+        </form>
+    </main>
+</body>
