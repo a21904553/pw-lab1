@@ -39,7 +39,7 @@ body table {
   
 tr:nth-child(odd) {
     background-color:rgba(100, 82, 82, 0.712);
-}
+}  
 
 tr:nth-child(even) {
     background-color: rgb(247, 105, 105);
