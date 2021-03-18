@@ -43,7 +43,7 @@ tr:nth-child(odd) {
 
 tr:nth-child(even) {
     background-color: rgb(247, 105, 105);
-  }
+}
 
 h3 + p::first-letter {
     font-size: 200%;
