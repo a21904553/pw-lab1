@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt"></html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=wVZofZsG4jiaMdq3kaP0Unaqo2kH7s_0xcPcQulVSlBuIIBuaw9Jk2DOJDBQNa2oIy476k9jnj983Bo-59X7735_6vwftcZtlV_62VaVyUWmQbcCBpKv8LfIviZzzsep" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://ff.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9wdy1sYWJzLXBlZHJvY29zdGEtMjE5MDQ4MjUuaGVyb2t1YXBwLmNvbS9sYWI0L2h0bWw1LWNzcy5odG1s"/><style>
+        table, th, td {
+            border: 1px dashed  red;
+        } 
+    </style>
+    <meta name="author" content="Ricardo Faia">
+    <meta name="keywords" content="Holanda, Amesterdão">
+    <meta name="description" content="Website sobre Amesterdão">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+    <title>Cidade do Mundo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Amesterdão</h1>
+        <figure style="text-align: center;">
+            <img src="images/bicicleta.jpg" alt="Amesterdão, Paises Baixos" class = "centerImg mainF" clas>
+            <details style="text-align: center;"> Foto de uma ponte tipica de Amesterdão</details>
+        </figure>
+    </header>
+    <br>
+    <nav style="text-align: center;">
+        <div>
+        <a class="active" href="index.html"><span class="material-icons md-24">star</span>Introdução</a>
+        <a href="local.html"><span class="material-icons md-24">fmd_good</span>Localização</a>
+        <a href="multimedia.html"><span class="material-icons md-24">image</span> Multimédia</a>
+        <a href="info.html"><span class="material-icons md-24">info</span>Informações </a>
+        </div>
+        <div>
+        <a href="quizz.html"><span class="material-icons md-24">analytics</span> Quizz</a> </a>
+        <a href="comentarios.html"><span class="material-icons md-24">feedback</span>Comentários</a>
+        <a href="html5-css.html"><span class="material-icons md-24">settings</span>HTML5 e CSS</a>
+        </div>
+        <div>
+        <a href="../index.html"><span class="material-icons md-24">home</span> Home</a>
+        </div>
+    </nav> 
+
+    <main>
+        <h3>Quizz</h3>
+
+        <form
+            oninput="x.value=parseInt(densidade.value)"
+            method="POST" action="mailto:a21904553@alunos.ulht.pt">
+                <fieldset>
+                    <legend align="center">Informações Utilizador</legend>
+                    <input type="reset" value="Limpar">
+                    <p>Nome: <input type="text" id="fname" name="fname" autofocus required autocomplete="on"></p>
+                    <p>Apelido: <input type="text" id="lname" name="lname" required autocomplete="on"></p>
+                    <p>Email: <input type="email" id="email" name="email" required autocomplete="on"></p>
+                    <p>Telemóvel: <input type="tel" id="phone" name="phone" placeholder="Ex: 9XXXXXXXX" maxlength="9" autocomplete="on"></p>
+                </fieldset>
+                <fieldset>
+                    <legend align="center">Quizz</legend>
+                    <p>A cidade de Amesterdão localiza-se em que região? <input type="text" id="regiao" name="regiao" size="15"></p>
+                    <p>Em que ano a cidade declarou a independência do império clonial Espanhol? 
+                        <input type="radio" id="ano1" name="anoCidade" value="1578">
+                        <label for="ano1">1578</label>
+                        <input type="radio" id="ano2" name="anoCidade" value="1594">
+                        <label for="ano2">1594</label>
+                    </p>
+                    <p>Qual é a flor tipica de Amesterdão?
+                        <br>
+                        <input type="checkbox" id="flor1" name="flor1" value="Tulipas">
+                        <label for="flor1">Tulipas</label>
+                        <input type="checkbox" id="flor2" name="flor2" value="Rosas">
+                        <label for="flor2">Rosas</label>
+                        <input type="checkbox" id="flor3" name="flor3" value="Papoilas">
+                        <label for="flor3">Papoilas</label>
+                        <input type="checkbox" id="flor4" name="flor4" value="Cravos">
+                        <label for="flor4">Cravos</label>
+                        <input type="checkbox" id="flor5" name="flor5" value="Delfínio">
+                        <label for="flor5">Delfínio</label>
+                    </p>
+                    <p>
+                        <label for="dataNome">Em que data foi inaugurado o museu de Van Gogh (um dos principais museus de Amesterdão)?</label>
+                        <input type="date" id="dataNome" name="dataNome" min="1970-01-01" max="2000-12-31">
+                    </p>
+                    <p>
+                        <label for="cor">Escolha uma das cores da bandeira dos Países Baixos?</label>
+                        <input type="color" id="cor" name="cor" value="#FFFF00">
+                    </p>
+                    <p>
+                        <label for="freguesias">Qual é a área urbana de Amesterdão?</label>
+                        <input type="number" id="freguesias" name="freguesias" min="950" max="1050" step="2">
+                    </p>
+                    <p>
+                        <label for="ano">Qual densidade populacional?</label>
+                        <input type="range" id="densidade" name="densidade" min="1000" max="1700" value="1000">
+                        <output name="x">1000</output>
+                    </p>
+                </fieldset>
+                <br>
+                <input type="submit" value="Enviar" style="height:25px; width:125px;">
+                
+        </form>
+    </main>
+
+    <aside>
+        <figure style="text-align: center;">
+            <img src="images/Amesterdão4.jpg" style="border: 5px solid rgb(255, 0, 0);">
+            <img src="images/Amesterdão5.jpg" style="border: 5px solid rgb(255, 0, 0);">
+        </figure>
+        <div style="text-align: justify;">
+        <p>A cidade de Amesterdão é muito marcada pelos seus canais que se devem ao facto de estar abaixo do nivel da água do mar</p>
+        <p>O que salta muito à vistra também são os seus campos de papoilas que têm muita cor e muito bonitos de se ver</p>
+        </div>
+    </aside>
+    
+</body>
